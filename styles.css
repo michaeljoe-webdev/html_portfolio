@@ -1,0 +1,237 @@
+/* .container div {
+  width:33%;
+  float:left;
+  border: 1px solid black;
+} */
+*{
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+.container {
+  width:100%;
+  overflow:auto;
+  border: 1px solid red;
+  /* background-color: rgb(15, 216, 235); */
+}
+.page {
+  margin: .5% 2.5%;
+  overflow:auto;
+  /* border: 1px solid blue; */
+  display:block; 
+}
+.coverpage {
+  background-image: url('binary.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  text-align: center;
+  color: white;
+  margin: 0.5%;
+}
+
+.routes {
+  float:right;
+  left: 40%;
+  margin: 1%;
+  font-size: 100%;
+  position: relative;
+  /* border: 1px dashed red; */
+  position: fixed;
+
+}
+
+.side-contents {
+  border: 1px solid rgb(204, 20, 217);
+  width: 35%;
+  left: 0;
+}
+.profile {
+  height: 30%;
+  width: 100%;
+  margin: 1% 0.5%;
+  border: 1px solid black;
+}
+
+.profile h4 {
+  text-align: center;
+}
+
+/* LINKS */
+.links {
+  margin: 1%;
+}
+
+table, td {
+  text-align: center;
+  border: 1px solid black;
+  width: 50%;
+  border-collapse: collapse;
+  margin: 0% 1%;
+}
+
+.links td a{
+  color: black;
+  text-decoration:none;
+  font-size: 12px;
+  width: 50%;
+}
+
+/* AVATAR IMG */
+.avatar img{
+  margin: 0.5% 1%;
+  border-radius: 30% 0px;
+  width: 50%;
+}
+
+/* FLIP CARD */
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 40rem;
+  max-width: 220px;
+  margin: 1% 0.5%;
+  box-shadow: none;
+  background: none;
+}
+
+.card-side {
+  /* height: 35rem; */
+  border-radius: 15px;
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  color: white;
+}
+
+.card-side.back {
+  transform: rotateY(-180deg);
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+}
+
+.card-side.front {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.card:hover .card-side.front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-side.back {
+  transform: rotateY(0deg);
+}
+
+/* DIAMOND */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+  color: #7f7e84;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
+}
+
+.diamond-card {
+  padding: 1rem 0;
+}
+
+
+.card-container {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card-content {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 22px 0 rgba(128, 128, 129, 0.37);
+}
+
+.card-content h2 {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.card-content p {
+  color: #5c5b5b;
+  font-size: 14px;
+}
+
+.img-container {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.img-container img {
+  width: 7rem;
+}
+
+.card-content:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.card-content:hover p {
+  color: rgb(34, 34, 34);
+}
+
+.card-content-1 {
+  border: 3px solid #45d3d3;
+}
+
+.card-content-2 {
+  border: 3px solid #ea5353;
+}
+
+.card-content-3 {
+  border: 3px solid #fc4ac1;
+}
+
+.card-content-4 {
+  border: 3px solid #549ef2;
+}
+
+
+/* CONTENTS */
+
+.main-contents {
+  border: 3px solid #28ab23;
+  width: 50%;
+  right: 0;
+}
+

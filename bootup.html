@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 10 Bootup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0078d4;
+            color: white;
+            text-align: center;
+        }
+
+        .loader {
+            font-size: 100px;
+            margin-top: 200px;
+        }
+
+        .loader i {
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .message {
+            margin-top: 20px;
+        }
+
+        .progress {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #ddd;
+            border: 1px solid #666;
+        }
+
+        .progress-bar {
+            width: 0%;
+            height: 30px;
+            background-color: #0078d4;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Add the audio element -->
+
+    <div class="loader"><i class="fas fa-circle-notch"></i></div>
+    <div class="message">Starting Windows...</div>
+    <div class="progress">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <script>
+        // Simulate progress bar
+        let progress = 0;
+        const progressBar = document.getElementById('progress-bar');
+        const interval = setInterval(() => {
+            progress += Math.random() * 80;
+            if (progress >= 100) {
+                clearInterval(interval);
+                progressBar.style.width = '100%';
+                document.querySelector('.message').textContent = 'Welcome!';
+                setTimeout(() => {
+                    document.body.innerHTML = ' <audio id="bootup-sound" src="windows-xp-startup.mp3" preload="auto"></audio><h1>Welcome to Windows 10</h1>';
+                            // Play the bootup sound
+                    const bootupSound = document.getElementById('bootup-sound');
+                    bootupSound.play();
+                }, 1000);
+            } else {
+                progressBar.style.width = `${progress}%`;
+            }
+        }, 500);
+    </script>
+</body>
+
+</html>
