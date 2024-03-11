@@ -12,24 +12,285 @@
     <link rel="icon" type="image/x-icon" href="./dexotg.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
 </head>
 <body>
-    <div class="container">
+    <div class="containerS">
         <div class="page">
             <div class="coverpage">
-                <div class="routes" >
-                    <a href="https://facebook.com" target="_blank">Home |</a>
-                    <a href="https://facebook.com" target="_blank">About |</a>
-                    <a href="https://facebook.com" target="_blank">Services |</a>
-                    <a href="https://facebook.com" target="_blank">Portfolio</a>
-                </div>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <header id="home">
+                <div  class="hero-content animate__animated animate__fadeIn">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p><em>"Crafting Your Digital Dreams into Reality!"</em></p>
+                </div>
+                <!-- <div class="hero">
+                    <div class="hero-content animate__animated animate__fadeIn">
+                        <h1>Welcome to My Portfolio</h1>
+                        <p>I'm a Web Developer passionate about creating awesome websites.</p>
+                        <a href="#about" class="hero-btn animate__animated animate__fadeIn">Learn More</a>
+                    </div>
+                </div> -->
+            </header>
+            <section id="about">
+                <div class="container">
+                    <div class="profile">
+                    <img src="profile.png" alt="https://gravatar.com/avatar/f7388f079d10e3899455a6c5703ef056c3aa3377913a07ca332405ae9f7a1363?size=256" class="profile-img">
+                    <div class="details">
+                        <h2>Michael Joe Monforte</h2>
+                        <p>Full-Stack Developer</p>
+                    </div>
+                    <div class="more-details">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada augue in massa maximus, at volutpat libero sollicitudin. Cras sit amet viverra purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p>Nulla facilisi. Proin nec justo quis mi euismod volutpat. Integer id luctus justo, sed gravida sapien. Integer eget justo vitae lacus accumsan gravida. Donec volutpat sapien non feugiat pellentesque.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="skills">
+                <div class="container">
+                    <h2>Skills</h2>
+                    <div class="row">   
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Front End Experience</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <div class="skill">
+                                            <span class="skill-label">HTML</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">CSS</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">JavaScript</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">Vue.js</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Back End Experience</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <div class="skill">
+                                            <span class="skill-label">Node.js</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">Express.js</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">PHP</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">Laravel</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">Scripting</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Database Management</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <div class="skill">
+                                            <span class="skill-label">MySQL</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">MSSQL</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">CouchDB</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">ODBC</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">Workbench</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">MS Access</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Git and Hosting Experience</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <div class="skill">
+                                            <span class="skill-label">AWS</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">Wasabi</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">Hostinger</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">Infinityfree</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">Github</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill-label">Gitlab</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="skill">
+                        <span class="skill-label">HTML</span>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-label">CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-label">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 95%;">95%</div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+            <section id="services">
+                <div class="container">
+                    <h2>Services</h2>
+                    <div class="services">
+                        <i class="arrow fas fa-chevron-left arrow-left"></i>
+                        <i class="arrow fas fa-chevron-right arrow-right"></i>
+                        <div class="services-wrapper">
+                            <div class="service">
+                                <h3>Web Design</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="#" class="btn">Learn More</a>
+                            </div>
+                            <div class="service">
+                                <h3>Web Development</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="#" class="btn">Learn More</a>
+                            </div>
+                            <div class="service">
+                                <h3>SEO Optimization</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="#" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <p>Add your projects here.</p>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="container">
+                    <h2>Contact Me</h2>
+                    <p>Add your contact information here.</p>
+                </div>
+            </section>
+            <script src="script.js"></script>
             <div class="side-contents">
                 <div class="profile">
                     <h4>Michael Joe Monforte</h4>   
                     
                     <div class="avatar">
-                        <img src="main-photo.PNG" alt="https://gravatar.com/avatar/f7388f079d10e3899455a6c5703ef056c3aa3377913a07ca332405ae9f7a1363?size=256">
+                        <img src="profile.png" alt="https://gravatar.com/avatar/f7388f079d10e3899455a6c5703ef056c3aa3377913a07ca332405ae9f7a1363?size=256">
                     </div>
                     <div class="links">
                         <table>
@@ -104,7 +365,13 @@
 
     </div>
     <!-- <script src="pagination.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
+
+    </script>
+    <script>
+        new WOW().init();
     </script>
 </body>
 </html>
